@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	if(jQuery("#dinamic-filter-list").length > 0) {FilterListSection();}
 });
 
+function handleKeyDown() {
+    if (event.key === 'Enter') {
+      location.href = "https://impervious.domains/search/" + event.target.value;
+    }
+  };
+
 
 	
 	
